@@ -1,6 +1,5 @@
-FROM debian:jessie
-
-MAINTAINER Oluwaseun Obajobi "oluwaseun.obajobi@namshi.com"
+FROM phusion/baseimage:0.9.16
+MAINTAINER Axel Utech <axel@brasshack.de>
 
 RUN apt-get update && apt-get install -y exim4-daemon-light
 
