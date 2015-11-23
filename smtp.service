@@ -10,7 +10,7 @@ ExecStart=/usr/bin/docker run --name=smtp --detach=false --cpu-shares=512 \
     --memory=512M --rm=true --hostname=smtp \
     --cap-drop=NET_RAW \
     openseamap/smtp-docker
-ExecStop=/usr/bin/docker pull openseamap/smtp-docker:latest
+ExecStop=/usr/bin/docker pull openseamap/smtp-docker:master
 
 [Install]
 WantedBy=multi-user.target
